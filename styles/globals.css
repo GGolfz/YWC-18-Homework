@@ -19,27 +19,27 @@ a {
 
 .background {
   min-height: 100vh;
-  background-image: url('/image/result-bg.png');
+  background-image: url('/YWC-18-Homework/image/result-bg.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 @font-face {
   font-family: "IBMPlexSansThai";
-  src: url("/font/IBMPlexSansThai.woff2");
+  src: url("/YWC-18-Homework/font/IBMPlexSansThai.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "IBMPlexSansThai";
-  src: url("/font/IBMPlexSansThai-SemiBold.woff2");
+  src: url("/YWC-18-Homework/font/IBMPlexSansThai-SemiBold.woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "IBMPlexSansThai";
-  src: url("/font/IBMPlexSansThai-Bold.woff2");
+  src: url("/YWC-18-Homework/font/IBMPlexSansThai-Bold.woff2");
   font-weight: 700;
   font-display: swap;
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <div className={styles.container}>
       <Head>

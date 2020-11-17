@@ -18,6 +18,9 @@ jobs:
           npm install
           npm run build
           npm run export
+          touch ./out/.nojekyll
+        env: 
+          NEXT_PUBLIC_BASE_PATH: '/YWC-18-Homework'
       - name: Deploy
         uses: s0/git-publish-subdir-action@v2.3.0
         env:

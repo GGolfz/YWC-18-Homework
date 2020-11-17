@@ -2,6 +2,7 @@ import { Input } from 'antd'
 import React, { Fragment } from 'react'
 import SelectLocation from '../utils/selectLocation'
 import Icon from '../icon/icon'
+import {prefix} from '../../utils/constant'
 const Nav = ({province,current,handleChange}) => {
   return (
     <Fragment>
@@ -10,13 +11,13 @@ const Nav = ({province,current,handleChange}) => {
         <img
           className="desktop"
           style={{height:'40px',width:'auto'}}
-          src="/image/halfhalf-logo.png"
+          src={prefix+"/image/halfhalf-logo.png"}
           alt="logo-desktop"
         />
         <img
           className="mobile"
           style={{height:'40px',width:'auto'}}
-          src="/image/halfhalf-logo-mini.png"
+          src={prefix+"/image/halfhalf-logo-mini.png"}
           alt="logo-mobile"
         />
         </div>
@@ -64,7 +65,7 @@ const Nav = ({province,current,handleChange}) => {
         </div>
         <div className="mobile" style={{paddingLeft:'.75rem'}}>
           <img
-            src="/image/filter.png"
+            src={prefix+"/image/filter.png"}
             style={{ height: '20px', width: 'auto' }}
           ></img>
         </div>

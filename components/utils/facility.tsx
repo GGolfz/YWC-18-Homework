@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-
+import {prefix} from '../../utils/constant';
 const Facility = ({ type }) => {
   return (
     <Fragment>
@@ -14,7 +14,7 @@ const Facility = ({ type }) => {
           borderRadius: '20px',
         }}
       >
-        <img style={{height:'1.2rem',width:'1.2rem'}} src={'/image/' + type + '.png'} alt="facility" />
+        <img style={{height:'1.2rem',width:'1.2rem'}} src={prefix+'/image/' + type + '.png'} alt="facility" />
       </div>
     </Fragment>
   )

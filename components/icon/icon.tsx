@@ -1,5 +1,3 @@
-import React, { Fragment } from 'react'
-
 const Icon = ({ type }) => {
   switch (type) {
     case 'location':

@@ -11,8 +11,13 @@ const MerchantBox = ({ data, price }) => {
     }
   }
   const renderPrice = () => {
-    return [...Array(data.priceLevel).fill(1),...Array(4- data.priceLevel).fill(0)].map(el=>{
-        return (<span style={{color:`${el==1?'#222222':'#bbbbbb'}`}}>฿</span>)
+    return [
+      ...Array(data.priceLevel).fill(1),
+      ...Array(4 - data.priceLevel).fill(0),
+    ].map((el) => {
+      return (
+        <span style={{ color: `${el == 1 ? '#222222' : '#bbbbbb'}` }}>฿</span>
+      )
     })
   }
   return (
@@ -72,7 +77,7 @@ const MerchantBox = ({ data, price }) => {
             dangerouslySetInnerHTML={{ __html: data.highlightText }}
           ></div>
           {data.recommendedItems.length > 0 ? (
-            <div style={{marginTop:'.3rem'}}>
+            <div style={{ marginTop: '.3rem' }}>
               <span style={{ fontWeight: 600 }}>สินค้าแนะนำ: </span>
               <span className="shop-content">
                 {data.recommendedItems.join(', ')}
@@ -80,9 +85,13 @@ const MerchantBox = ({ data, price }) => {
             </div>
           ) : null}
           {data.facilities.length > 0 ? (
-            <div className="flex" style={{marginTop:'1rem'}}>
+            <div className="flex" style={{ marginTop: '1rem' }}>
               {data.facilities.map((el) => {
-                return <div style={{marginRight:'.5rem'}}><Facility type={el} /></div>
+                return (
+                  <div style={{ marginRight: '.5rem' }}>
+                    <Facility type={el} />
+                  </div>
+                )
               })}
             </div>
           ) : null}

@@ -25,43 +25,43 @@ a {
   background-attachment: fixed;
 }
 @font-face {
-  font-family: "IBMPlexSansThai";
-  src: url("/YWC-18-Homework/font/IBMPlexSansThai.woff2");
+  font-family: 'IBMPlexSansThai';
+  src: url('/YWC-18-Homework/font/IBMPlexSansThai.woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "IBMPlexSansThai";
-  src: url("/YWC-18-Homework/font/IBMPlexSansThai-SemiBold.woff2");
+  font-family: 'IBMPlexSansThai';
+  src: url('/YWC-18-Homework/font/IBMPlexSansThai-SemiBold.woff2');
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
-  font-family: "IBMPlexSansThai";
-  src: url("/YWC-18-Homework/font/IBMPlexSansThai-Bold.woff2");
+  font-family: 'IBMPlexSansThai';
+  src: url('/YWC-18-Homework/font/IBMPlexSansThai-Bold.woff2');
   font-weight: 700;
   font-display: swap;
 }
 
 @media only screen and (min-width: 768px) {
-  .desktop{
-    display:block;
+  .desktop {
+    display: block;
   }
   .mobile {
-    display:none;
+    display: none;
   }
   .navigate {
-    padding: .75rem 7rem;
+    padding: 0.75rem 7rem;
   }
   .nav {
-    margin: .5rem 7rem;
+    margin: 0.5rem 7rem;
   }
   .content {
     margin: 1rem 1rem 0 1rem;
   }
   .merchant-list {
-    padding-left: 2rem
+    padding-left: 2rem;
   }
   .shop-image {
     width: 240px;
@@ -69,17 +69,17 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  .desktop{
-    display:none;
+  .desktop {
+    display: none;
   }
   .mobile {
-    display:block;
+    display: block;
   }
   .nav {
-    margin: .75rem 1rem;
+    margin: 0.75rem 1rem;
   }
   .navigate {
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
   }
   .content {
     margin: 1.25rem 1rem 0 1rem;
@@ -91,7 +91,7 @@ a {
 }
 
 .flex {
-  display: flex
+  display: flex;
 }
 
 .justify-center {
@@ -114,9 +114,9 @@ a {
   font-weight: 600;
   margin-left: 8px;
 }
-.tag.open{
-  background:rgb(27, 195, 0);
+.tag.open {
+  background: rgb(27, 195, 0);
 }
-.tag.close{
-  background:rgb(161, 161, 161);
+.tag.close {
+  background: rgb(161, 161, 161);
 }

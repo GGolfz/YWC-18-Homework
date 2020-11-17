@@ -1,11 +1,11 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Select } from 'antd'
 const { Option } = Select
 const SelectPrice = ({ border, width, price, current, handleChange }) => {
   return (
     <Fragment>
       <Select
-        value={current == '' ?null:current}
+        value={current == '' ? null : current}
         onChange={handleChange}
         style={{ width: width }}
         bordered={border}

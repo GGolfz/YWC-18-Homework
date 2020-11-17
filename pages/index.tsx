@@ -12,7 +12,9 @@ const Home = () => {
   const [priceRange, setPriceRange] = useState([])
   const [merchant, setMerchant] = useState([])
   const [currentProvince, setCurrentProvince] = useState('near')
-  const [currentCategory, setCurrentCategory] = useState('ร้านอาหารและเครื่องดื่ม')
+  const [currentCategory, setCurrentCategory] = useState(
+    'ร้านอาหารและเครื่องดื่ม'
+  )
   const [currentPrice, setCurrentPrice] = useState('')
   const [currentSubCategory, setCurrentSubCategory] = useState('ทั้งหมด')
   const changeProvince = (val) => {
@@ -79,10 +81,23 @@ const Home = () => {
             </div>
             <div className="merchant-list" style={{ flex: '1' }}>
               {merchant.map((el, index) => {
-                return (<div style={{marginBottom:'.5 rem'}}><MerchantBox key={index} data={el} price={priceRange} /></div>)
+                return (
+                  <div style={{ marginBottom: '.5 rem' }}>
+                    <MerchantBox key={index} data={el} price={priceRange} />
+                  </div>
+                )
               })}
-              <div className="button-seemore" style={{marginTop:'3rem',display:'flex',justifyContent:'center'}}>
-                <Button style={{width:'384px',height:'50px'}}>ดูเพิ่มเติม</Button>
+              <div
+                className="button-seemore"
+                style={{
+                  marginTop: '3rem',
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
+              >
+                <Button style={{ width: '384px', height: '50px' }}>
+                  ดูเพิ่มเติม
+                </Button>
               </div>
             </div>
           </div>

@@ -2,24 +2,24 @@ import { Input } from 'antd'
 import React, { Fragment } from 'react'
 import SelectLocation from '../utils/selectLocation'
 import Icon from '../icon/icon'
-import {prefix} from '../../utils/constant'
-const Nav = ({province,current,handleChange}) => {
+import { prefix } from '../../utils/constant'
+const Nav = ({ province, current, handleChange }) => {
   return (
     <Fragment>
       <div className="flex justify-center nav" style={{ alignItems: 'center' }}>
-        <div style={{paddingRight:'2rem'}}>
-        <img
-          className="desktop"
-          style={{height:'40px',width:'auto'}}
-          src={prefix+"/image/halfhalf-logo.png"}
-          alt="logo-desktop"
-        />
-        <img
-          className="mobile"
-          style={{height:'40px',width:'auto'}}
-          src={prefix+"/image/halfhalf-logo-mini.png"}
-          alt="logo-mobile"
-        />
+        <div style={{ paddingRight: '2rem' }}>
+          <img
+            className="desktop"
+            style={{ height: '40px', width: 'auto' }}
+            src={prefix + '/image/halfhalf-logo.png'}
+            alt="logo-desktop"
+          />
+          <img
+            className="mobile"
+            style={{ height: '40px', width: 'auto' }}
+            src={prefix + '/image/halfhalf-logo-mini.png'}
+            alt="logo-mobile"
+          />
         </div>
         <div
           style={{
@@ -28,23 +28,30 @@ const Nav = ({province,current,handleChange}) => {
             border: '1px solid #d9d9d9',
             borderRadius: '8px',
             padding: '.25rem 0',
-            overflow:'hidden',
-            fontSize:'1.2em',height:'100%',
-            alignItems:'center'
+            overflow: 'hidden',
+            fontSize: '1.2em',
+            height: '100%',
+            alignItems: 'center',
           }}
         >
           <div
             className="desktop"
             style={{
               borderRight: '1px solid #d9d9d9',
-              height: '2rem'
+              height: '2rem',
             }}
           >
-            <SelectLocation width={200} handleChange={handleChange} border={false} current={current} province={province} />
+            <SelectLocation
+              width={200}
+              handleChange={handleChange}
+              border={false}
+              current={current}
+              province={province}
+            />
           </div>
           <Input
             bordered={false}
-            style={{ padding: '0 0 0 8px',height:'2rem' }}
+            style={{ padding: '0 0 0 8px', height: '2rem' }}
             suffix={
               <Fragment>
                 <div
@@ -63,9 +70,9 @@ const Nav = ({province,current,handleChange}) => {
             placeholder="ค้นหา ชื่อ ร้านอาหาร และเครื่องดื่ม ร้านธงฟ้า ร้านค้า OTOP และสินค้าทั่วไป"
           />
         </div>
-        <div className="mobile" style={{paddingLeft:'.75rem'}}>
+        <div className="mobile" style={{ paddingLeft: '.75rem' }}>
           <img
-            src={prefix+"/image/filter.png"}
+            src={prefix + '/image/filter.png'}
             style={{ height: '20px', width: 'auto' }}
           ></img>
         </div>

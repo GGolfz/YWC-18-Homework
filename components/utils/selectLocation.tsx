@@ -1,8 +1,8 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Select } from 'antd'
 import Icon from '../icon/icon'
 const { Option } = Select
-const SelectLocation = ({ border,width, province, current, handleChange }) => {
+const SelectLocation = ({ border, width, province, current, handleChange }) => {
   return (
     <Fragment>
       <Select

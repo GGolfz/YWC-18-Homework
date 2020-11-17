@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import SelectLocation from '../utils/selectLocation'
 import SelectPrice from '../utils/selectPrice'
 import RadioSelect from '../utils/radioSelect'

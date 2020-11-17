@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={prefix+"/favicon.ico"} />
       </Head>
 
       <main className={styles.main}>
@@ -58,7 +58,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img src={prefix+"/vercel.svg"} alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>

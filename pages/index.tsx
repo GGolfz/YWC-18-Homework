@@ -82,7 +82,7 @@ const Home = () => {
             <div className="merchant-list" style={{ flex: '1' }}>
               {merchant.map((el, index) => {
                 return (
-                  <div className="merchant-box">
+                  <div key={index} className="merchant-box">
                     <MerchantBox key={index} data={el} price={priceRange} />
                   </div>
                 )

@@ -98,6 +98,10 @@ a {
   justify-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .ant-breadcrumb-separator {
   color: white !important;
 }
@@ -119,4 +123,7 @@ a {
 }
 .tag.close {
   background: rgb(161, 161, 161);
+}
+.merchant-box {
+  margin-bottom: .5rem;
 }

@@ -14,9 +14,9 @@ const MerchantBox = ({ data, price }) => {
     return [
       ...Array(data.priceLevel).fill(1),
       ...Array(4 - data.priceLevel).fill(0),
-    ].map((el) => {
+    ].map((el,index) => {
       return (
-        <span style={{ color: `${el == 1 ? '#222222' : '#bbbbbb'}` }}>฿</span>
+        <span key={index} style={{ color: `${el == 1 ? '#222222' : '#bbbbbb'}` }}>฿</span>
       )
     })
   }
@@ -86,9 +86,9 @@ const MerchantBox = ({ data, price }) => {
           ) : null}
           {data.facilities.length > 0 ? (
             <div className="flex" style={{ marginTop: '1rem' }}>
-              {data.facilities.map((el) => {
+              {data.facilities.map((el,index) => {
                 return (
-                  <div style={{ marginRight: '.5rem' }}>
+                  <div key={index} style={{ marginRight: '.5rem' }}>
                     <Facility type={el} />
                   </div>
                 )

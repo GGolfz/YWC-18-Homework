@@ -3,18 +3,22 @@ import { Radio } from 'antd'
 const RadioSelect = ({ current, data, handleChange, property }) => {
   return (
     <Fragment>
-      <Radio.Group value={current} onChange={handleChange}>
+      <Radio.Group value={current} onChange={handleChange} style={{width:'100%'}}>
         <Radio value="ทั้งหมด">ทั้งหมด</Radio>
         {data?.map((el, index) => {
-          return (
-            <Radio
-              style={{ display: 'block', lineHeight: '32px' }}
-              key={index}
-              value={property ? el[property] : el}
-            >
-              {property ? el[property] : el}
-            </Radio>
-          )
+          if (index > 0 && data[index] != data[index - 1]) {
+            return (
+              <Radio
+                style={{ display: 'block', lineHeight: '32px',whiteSpace:'pre-wrap' }}
+                key={index}
+                value={property ? el[property] : el}
+              >
+                {property ? el[property] : el}
+              </Radio>
+            )
+          } else {
+            return null
+          }
         })}
       </Radio.Group>
     </Fragment>

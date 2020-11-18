@@ -82,7 +82,7 @@ const Home = () => {
             <div className="merchant-list" style={{ flex: '1' }}>
               {merchant.map((el, index) => {
                 return (
-                  <div style={{ marginBottom: '.5 rem' }}>
+                  <div className="merchant-box">
                     <MerchantBox key={index} data={el} price={priceRange} />
                   </div>
                 )

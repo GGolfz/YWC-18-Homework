@@ -120,3 +120,6 @@ a {
 .tag.close {
   background: rgb(161, 161, 161);
 }
+.merchant-box {
+  margin-bottom: .5rem;
+}

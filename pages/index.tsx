@@ -30,7 +30,7 @@ const Home = () => {
     setCurrentSubCategory(e.target.value)
   }
   useEffect(() => {
-    Axios.get('https://panjs.com/ywc18.json').then((res) => {
+    Axios.get('https://ggolfz.codes/YWC-18-Homework/data/data.json').then((res) => {
       const { categories, provinces, priceRange, merchants } = res.data
       setCategories(categories)
       setProvince(provinces)
